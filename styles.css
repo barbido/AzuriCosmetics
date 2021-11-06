@@ -1,0 +1,278 @@
+
+
+header {
+    background-color: #14213d;
+    height: 160px;
+    
+    
+}
+
+
+
+#logo  {
+    color: #a57548;
+    font-family: 'Mostery', sans-serif;
+    text-decoration: none;
+    font-size: 4em;
+    text-align:center;
+    
+}
+
+
+
+
+body
+{
+  margin: 0;
+  padding: 0;
+  
+  background: white;
+  color: #cdcdcd;
+  font-family: 'Mostery', sans-serif;
+}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #fcd7ad;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: #82ddf0;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #fcd7ad;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #fcd7ad;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #14213d;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+ 
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+.separate{
+    background-color: white;
+    height: 7em;
+
+}
+.background {
+    background-color: #82ddf0;
+    width: 100em;
+    height: 60em;
+    
+}
+
+.top-half {
+    position:absolute;
+
+    width:80em;
+
+    height:55em;
+
+    top: 160px;
+
+    right:0;
+
+}
+
+.mid-page {
+    position:absolute;
+
+    width:70em;
+
+    height:55em;
+
+}
+
+.banner h1 {
+    font-family: 'Mostery', sans-serif;
+    color: #14213d;
+    font-size: 6em;
+    text-align: center;
+    
+}
+
+.banner p {
+    font-family: 'Mostery', sans-serif;
+    color: #14213d;
+    font-size: 2.5em;
+    text-align: center;
+
+    
+}
+
+.statement {
+    position: absolute;
+    top: 60%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+#mid-page h1 {
+    font-family: 'Mostery', sans-serif;
+    color: black;
+    font-size: 8em;
+    text-align: center;
+}
+
+#mid-page p {
+    font-family: 'Mostery', sans-serif;
+    color: black;
+    font-size: 5em;
+    text-align: center;
+}
+
+.mid-page{
+    position: absolute;
+    top: 130%;
+}
+
+.statement2{
+    position: absolute;
+    transform: translate(20%, 20%);
+    left: 5%;
+    
+}
+
+#contact {
+    background-color: #fca311;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Mostery', sans-serif;;
+    
+
+}
+
+.separate-last {
+    background-color: white;
+    height: 10em;
+}
+
+footer {
+    background-color:#14213d ;
+    margin-top: auto;
+    height: 25em;
+    width: 500em;
+    transform: translate(-50%, 500%);
+
+  }
+
+footer h1 h2  {
+    font-family: 'Mostery', sans-serif;
+    font-size: 5em;
+    color: #fcd7ad;
+  }
+
+footer p {
+    font-family: 'Mostery', sans-serif;
+    color: #fcd7ad;
+    font-size: 2.5em;
+}
+
+.left-contacts button{
+    color: #fcd7ad;
+    position: relative;
+}
